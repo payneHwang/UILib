@@ -37,5 +37,4 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
     //ui
     implementation 'com.android.support:design:26.1.0'
-    compile 'com.github.chenpengfei88:StatusLayout:1.0'
 }
