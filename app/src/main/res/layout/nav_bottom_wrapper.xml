@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_nav_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/nav_bottom_background"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/radio_home"
+        style="@style/navBottomStyle"
+        android:drawableTop="@drawable/btn_home_selector"
+        android:text="@string/we_chat" />
+
+    <RadioButton
+        android:id="@+id/radio_contact"
+        style="@style/navBottomStyle"
+        android:drawableTop="@drawable/btn_contact_selector"
+        android:text="@string/contact" />
+
+    <RadioButton
+        android:id="@+id/radio_find"
+        style="@style/navBottomStyle"
+        android:drawableTop="@drawable/btn_message_selector"
+        android:text="@string/find" />
+
+    <RadioButton
+        android:id="@+id/radio_mine"
+        style="@style/navBottomStyle"
+        android:drawableTop="@drawable/btn_mine_selector"
+        android:text="@string/mine" />
+
+</RadioGroup>

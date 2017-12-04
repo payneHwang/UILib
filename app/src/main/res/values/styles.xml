@@ -1,11 +1,42 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item><!--菜单栏的颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item><!--沉浸式状态栏的颜色-->
+        <item name="colorAccent">@color/colorAccent</item><!--UI控件的统一颜色-->
+        <item name="android:windowBackground">@color/white</item><!--界面背景颜色-->
+        <item name="android:navigationBarColor">@color/colorPrimary</item><!--底部的导航栏的背景颜色-->
+        <item name="android:textColorPrimary">@color/white</item><!--导航栏一级文字的颜色-->
+        <item name="android:textColorSecondary">@color/white</item><!--导航栏二级文字的颜色-->
+    </style>
+
+    <!--popup windows theme-->
+    <style name="popupWindowTheme">
+        <item name="android:colorBackground">@color/black</item><!--弹出框的背景颜色-->
+        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <!--progressBar Horizontal-->
+    <style name="progressHorizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+
+
+    </style>
+
+    <style name="navBottomStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/textSecondarySize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/nav_text_selector</item>
+        <item name="android:paddingTop">5dp</item>
     </style>
 
 </resources>
