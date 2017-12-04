@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <include layout="@layout/toolbar_wrapper" />
 
-    <include layout="@layout/frame_layout" />
+    <com.lwkandroid.stateframelayout.StateFrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/group_nav_wrapper"
+        android:layout_below="@+id/appBarWrapper"
+        app:emptyLayoutResId="@layout/layout_empty"
+        app:enableContentAnim="true"
+        app:loadingLayoutResId="@layout/layout_loading"
+        app:netErrorLayoutResId="@layout/layout_net_error"
+        tools:ignore="UnknownIdInLayout" />
+
 
     <include layout="@layout/nav_bottom_wrapper" />
 

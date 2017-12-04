@@ -50,7 +50,6 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
 
         initData(getArguments());
 
-        initView();
 
         mIsPrepare = true;
 
@@ -97,13 +96,6 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
      * @param arguments 接收到的从其他地方传递过来的参数
      */
     protected void initData(Bundle arguments) {
-
-    }
-
-    /**
-     * 初始化View
-     */
-    protected void initView() {
 
     }
 

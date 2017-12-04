@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.FrameLayout;
 
-import com.free.statuslayout.manager.StatusLayoutManager;
 import com.ui.R;
 
 import butterknife.BindView;
@@ -18,7 +17,6 @@ import butterknife.ButterKnife;
 public abstract class BaseActivity<V extends BaseIView, T extends BasePresenter<V>> extends AppCompatActivity {
 
     public T mPresenter;
-    protected StatusLayoutManager mStatusViewManager;
     @BindView(R.id.frame_content)
     protected FrameLayout mFrameContent;
 
